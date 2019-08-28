@@ -1,7 +1,0 @@
-<script>
-	random = Math.random();
-	random = random * 11;
-	random = Math.floor(random);
-	document.write ("Number is " + random + "<p>"); 
-	i = i + 1;
-</script>

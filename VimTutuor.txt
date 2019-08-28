@@ -1,5 +1,0 @@
-vim cmd: i - insert "<script>"
-vim cmd: yy - copy line
-vim cmd: p - past last copied or cut 
-vim cmd: a - append after the cursor "/"
-vim cmd: O - open a line above the cursor - insert "var age; age = prompt;...."
