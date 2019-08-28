@@ -1,0 +1,89 @@
+// https://github.com/VSCodeVim/Vim
+{
+    "breadcrumbs.enabled": true,
+    "editor.minimap.enabled": true,
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "vim.easymotion": true,
+    "vim.hlsearch": true,
+    "vim.camelCaseMotion.enable": true,
+    // "vim.sneak": true,
+    "vim.leader": "<Space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["s"],
+            "after": ["leader", "leader", "s" ]
+        },
+        {
+            "before": ["<Backspace>"],
+            "after": ["leader", "leader", "leader", "b", "d", "w"]
+        },
+        {
+            "before": ["<leader>", "w"],
+            "after": [":", "w", "<Enter>"]
+        },
+        {
+            "before": ["'"],
+            "after": ["c", "i", "'"]
+        },
+        {
+            "before": ["\""],
+            "after": ["c", "i", "\""]
+        },
+        {
+            "before": ["("],
+            "after": ["f", ")", "c", "i", "("]
+        },
+        {
+            "before": [")"],
+            "after": ["F", "(", "c", "i", "("]
+        },
+        {
+            "before": ["("],
+            "after": ["f", ")", "c", "i", "("]
+        },
+        {
+            "before": ["{"],
+            "after": ["f", "}", "c", "i", "{"]
+        },
+        {
+            "before": ["}"],
+            "after": ["F", "{", "c", "i", "{"]
+        },
+        {
+            "before": ["["],
+            "after": ["f", "]", "c", "i", "["]
+        },
+        {
+            "before": ["]"],
+            "after": ["F", "[", "c", "i", "["]
+        },
+        {
+            "before": ["J"],
+            "after":  ["}"]
+        },
+        {
+            "before": ["K"],
+            "after":  ["{"]
+        },
+        {
+            "before": ["+"],
+            "after":  ["J"]
+        },
+        {
+            "before": ["c", "w"],
+            "after":  ["c", "i", "w"]
+        },
+    ],
+    // Test area (text in parans) [text in block] "quoted stuff" {braketed stuff} 'stuff in single quote';
+    // CamelCase more_varaible
+    "window.enableMenuBarMnemonics": false,
+    "window.zoomLevel": 1,
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Visual Studio Light",
+    "zenMode.centerLayout": false,
+    "zenMode.hideLineNumbers": false,
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+}
