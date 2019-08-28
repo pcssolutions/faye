@@ -1,0 +1,25 @@
+<script>
+    var numberToGuess = Math.floor(Math.random()*100)
+    alert(numberToGuess)
+    var guess; 
+    var numberOfTries = 0;
+
+    while( guess != numberToGuess){
+        guess = prompt("Guess a number 1-100")
+        numberOfTries = numberOfTries +1
+        if (guess == numberToGuess){ 
+            if( numberOfTries == 1){
+                alert ("U did it in "+ numberOfTries +"  try")
+            }else{
+                alert ("U did it in "+ numberOfTries +"  tries ")
+            } 
+
+            if (guess < numberToGuess){ 
+                alert ("Guess higher")
+            } 
+            if (guess >numberToGuess){ 
+                alert ("Guess lower")
+            } 
+        }
+    }
+</script>

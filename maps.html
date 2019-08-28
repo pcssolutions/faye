@@ -1,0 +1,31 @@
+<script>
+
+    var numbersArr = [1, 2, 3, 4, ];
+    var times10Arr = [];
+
+    for(var i=0; i < numbersArr.length; i++) {
+        times10Arr.push(numbersArr[i] * 10);
+    }
+
+    /////////////////////////////////////
+
+    function doubleNumber(x) {
+        return x*2;
+    }
+
+    var numbers = [1, 2, 3, 4, ];
+    var myDouble = numbers.map(doubleNumber);
+
+    /////////////////////////////////////
+
+    var numbers = [1, 2, 3, 4, ];
+    var myTriple = numbers.map( function(x) {
+        return x*3;
+    });
+
+    /////////////////////////////////////
+
+    var numbersArr = [1, 2, 3, 4, ];
+    var mySquare = numbersArr.map( x => x*x);
+        
+</script>

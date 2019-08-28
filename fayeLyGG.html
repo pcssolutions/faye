@@ -1,0 +1,24 @@
+<script>
+
+    var numberToGuess = Math.floor(Math.random() * 100);
+    var guessingNumber;
+    var numberOfTries = 0;
+
+    while (guessingNumber != numberToGuess) {
+        numberOfTries++;
+
+        guessingNumber = prompt ("Guess a number between 1 through 100!");
+        <!-- alert (guessingNumber); -->
+        if (guessingNumber == numberToGuess) {
+            alert ("Congrats you won! It took you " + numberOfTries + " tries to get right!");
+        }
+        if (guessingNumber > numberToGuess) {
+            alert ("Guess lower");
+        }
+        if (guessingNumber < numberToGuess) {
+            alert ("Guess higher");
+        }
+
+    }
+    
+</script>

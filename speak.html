@@ -1,0 +1,7 @@
+<script>
+	do {
+        msgtosay = prompt("Type something to say, 'quit' to quit");
+        msg = new SpeechSynthesisUtterance(msgtosay);
+        window.speechSynthesis.speak(msg);
+    } while( msgtosay != "quit" );            
+</script>

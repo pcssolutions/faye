@@ -1,0 +1,17 @@
+<script>
+    function parrotTrouble(talking,hour) {
+        if(hour < 7 || hour > 20) {
+            if(talking == true) {
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+                return false;
+            }
+    }
+    alert(parrotTrouble(true,6));
+    alert(parrotTrouble(true,7));
+    alert(parrotTrouble(false,6));
+</script>
+

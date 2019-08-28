@@ -1,0 +1,43 @@
+ErgoLayout <-- gf to open
+
+Normal Mode Movement
+    j - down   k - up  h - left  l - right 
+    H - top    M - mid screen  L - low screen
+    w e - move to beginning/end of next word
+    b B - move to beggining of previous word
+    $ 0 - move to the end/start of the line
+    gg G - go to the first/last line
+    ( ) - move to previous/next sentence
+    { } - move to previous/next paragarage
+    * # - find next word/previous word under cursor
+    f F - find character forward/backword
+    ; ,  - find again forward/backword
+    ctrl b/f - back/forward page
+    zz zt zb - center cursor (middle/top/bottom)
+Normal Mode Commands
+    undo/redo   - u / Ctrl-r
+    copy/paste  - y p
+    delete      - d
+    delete line - dd
+    ctrl-w      - switch windows
+    search for word - /word
+    o O - open a new line below/above
+    A - Append to end of line
+    x X - delete character under/before cursor
+    i a A - insert before/after cursor/End Of Line
+    dd - delete the whole line
+    cw - change the word  
+    r R - replace one character / replace Mode
+    :q - quit    :q! quit without saving file
+    :w - save file   ZZ - save and quit
+    J  - join next line to this line
+    gq - reformat paragraph
+Visual Mode 
+    ctrl r - insert mode paste 
+    vas - visual around sentence
+    vis - visual inside sentence
+    vaw - visual around word
+    viw - visual inside word
+    ve  - visual end of word
+    vi" visual inside ", "two words"
+    va" visual around ", "two words"

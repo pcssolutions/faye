@@ -1,0 +1,24 @@
+<script>
+
+    var numberToGuess = Math.floor(Math.random() * 50);
+    var guessingNumber;
+    var numberOfTries = 0; 
+
+    <!-- alert (numberToGuess); -->
+    <!-- alert (guessingNumber); -->
+    while ( guessingNumber != numberToGuess ) {
+        numberOfTries = numberOfTries + 1;
+        guessingNumber = prompt ("Guess a number of 1 though 50");
+
+        if (guessingNumber == numberToGuess){
+            alert ("Congrats you won! It took you " + numberOfTries
+            + " tries!" );
+        }  
+        if (guessingNumber < numberToGuess){
+            alert ("Guess higher");
+        } 
+        if (guessingNumber > numberToGuess){
+            alert ("Guess lower");
+        } 
+    } 
+</script>

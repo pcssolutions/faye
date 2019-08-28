@@ -1,0 +1,16 @@
+<script>
+
+    var today       = new Date(); 
+    var oneDay      = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+
+    var askDate     = prompt("Enter a day and I will tell you how many days ago"); 
+    var pastDate    = new Date(askDate);
+    var timeDiff    = today.getTime() - pastDate.getTime();
+    var daysDiff    = timeDiff / oneDay;
+
+    daysDiff = Math.round(daysDiff);
+    
+     alert("That was about " + daysDiff + " days ago.");
+     alert("That was " + daysDiff * 24 + " hours ago.");
+
+</script>

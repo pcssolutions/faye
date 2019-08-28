@@ -1,0 +1,254 @@
+; PCS Solutions Copyright (2018)
+; shell:common startup
+
+#NoEnv
+SendMode Input
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+;keyhistory
+;#InstallMouseHook
+#installkeybdhook
+#EscapeChar \
+SetNumLockState,On
+SetNumLockState,AlwaysOff
+SetScrollLockState,Off
+SetScrollLockState,AlwaysOff
+SetCapsLockState,Off
+SetCapsLockState,AlwaysOff
+;Tab & s::MsgBox you press Tab & S
+
+RWIN::CTRL
+RCTRL & LALT::ShiftAltTab
+RCTRL & Space::AltTab
+
+;$AppsKey::RCTRL
+;AppsKey & Space::AltTab
+;AppsKey & LALT::ShiftAltTab
+
+;ThumbShift (TS) key mapping:
+
+;   '    "    Esc   r     Tab
+
+;   a    s    d     Ent   PgUp
+
+;   /    ?    c     |     \
+; MATIAS ERGO PRO
+ 
+	RALT & LALT::AltTab
+	;LALT & RALT::ShiftAltTab
+        ;$Backspace::return
+	RALT & d::MouseClick, left
+	RALT & e::Send {Escape}
+	RALT & f::Send {Enter}
+	;RALT & Space::Send {Backspace}
+	RALT & Space::Send {Backspace}
+	RALT & b::SendRaw \\
+	;RALT & g::Send {PgUp}
+	RALT & q::SendRaw '
+	;RALT & a::SendRaw '
+	RALT & t::Send {Tab}
+	RALT & v::SendRaw |
+	RALT & w::SendRaw "
+	RALT & x::SendRaw ?
+	RALT & z::SendRaw /
+	;RALT & g::Run "C:\\tools\\neovim\\Neovim\\bin\\nvim-qt.exe"
+	RALT & g::Run "C:\\Program Files (x86)\\Vim\\Vim80\\gvim.exe"
+	RALT & c::Run "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+RALT & 1::Send !	
+;$End::return
+End::Ctrl
+;$PgDn::Return;
+;PgDn::AltGr
+;End & a::^a
+;End & c::^c
+;End & g::End
+;End & e::Up
+;End & f::PgUp
+;End & d::PgDn
+;End & +d::^f
+;	End & r::^!n
+;	End & s::^s
+;	End & w::^w   ; notepad++ save (^s) 
+;	End & z::^z
+;Backspace::LShift
+	Backspace & e::MouseMove,   0, -25 , 0, R
+	Backspace & d::MouseMove,   0,  25 , 0, R
+	Backspace & s::MouseMove, -25,  0,   0, R
+	Backspace & f::MouseMove,  25,  0,   0, R
+	Backspace & Space::MouseClick Right
+;;	Backspace & g::Right
+;	Backspace & a::Send {Up}{Up}{Up}{Up}{Up}{Up}
+;;	Backspace & v::Send {Down}{Down}{Down}{Down}{Down}{Down}
+;	RALT & 1::Run http://testrail/testrail/index.php?/runs/view/4615&group_by=cases:section_id&group_order=asc
+;}
+
+; Right Pinky Shift
+
+Enter::Return
+$LShift::
+;$RShift::Return
+
+;$Shift::Return
+;$Enter::Return
+;$1::Return
+;$4::Return
+;$5::Return
+;$6::Return
+;$7::Return;$8::Return
+
+;$Space::Space
+;Space
+;Space & o::8
+
+; Left Pinky Shift
+3 & RALT::SendRaw 0
+3 & m::SendRaw 0
+3 & ,::SendRaw 1
+3 & .::SendRaw 2
+3 & /::SendRaw 3
+3 & k::SendRaw 4
+3 & l::SendRaw 5
+
+3 & \;::SendRaw 6
+3 & i::SendRaw 7
+3 & o::SendRaw 8
+3 & p::SendRaw 9
+3 & j::SendRaw +
+3 & '::SendRaw *
+3 & [::SendRaw /
+3 & ]::=
+3 & u::SendRaw -
+3 & y::SendRaw *
+3 & c::SendRaw rvl-pv-connvm06
+3 & r::SendRaw rvl-pv-nvm
+3 & w::SendRaw Wevalid
+$3::3
+
+;4 & RALT::MSGbox 4 & alt
+4 & l::MouseMove,    0, -200, 0, R
+4 & k::MouseMove,    0,  200, 0, R
+4 & j::MouseMove, -200, 0,   0, R
+4 & \;::MouseMove, 200,  0,   0, R
+4 & RALT::MouseClick
+4 & END::MouseClick, right
+$4::4
+
+5 & l::MouseMove,    0, -20 , 0, R
+5 & k::MouseMove,    0,  20,  0, R
+5 & j::MouseMove,  -20,  0,   0, R
+5 & RALT::MouseClick
+5 & \;::MouseMove,   20,  0,   0, R
+5 & END::MouseClick, right
+$5::5  
+
+k & Space::SendRaw j
+k & 1::SendRaw !
+k & 2::SendRaw @
+k & 3::SendRaw #
+k & 4::SendRaw $
+k & 5::SendRaw \%
+k & q::SendRaw Q
+k & w::SendRaw W
+k & e::SendRaw E
+k & r::SendRaw R
+k & t::SendRaw T
+k & a::SendRaw A
+k & s::SendRaw S
+k & d::SendRaw D
+k & f::SendRaw F
+k & g::SendRaw G
+k & z::SendRaw Z
+k & x::SendRaw X
+k & c::SendRaw C
+k & v::SendRaw V
+k & b::SendRaw B
+;$k::kk
+9  & q::SendRaw ^
+9 & w::SendRaw &
+9 & e::SendRaw *
+9 & r::SendRaw (
+9 & t::SendRaw )
+9 & a::SendRaw !
+9 & s::SendRaw @
+9 & d::SendRaw #
+9 & f::SendRaw $
+9 & g::SendRaw \%
+9 & z::SendRaw `
+9 & x::SendRaw ~
+9 & c::SendRaw _
+;RShift::SendRaw .
+LShift & 0::Send !)
+RALT & 0::Send !)
+
+; 3 will be left shift
+;3::Return
+$f::f
+f & Space::f
+f & 6::Return
+f & 7::SendRaw ^
+f & 8::SendRaw &
+f & 9::SendRaw *
+f & 0::SendRaw (
+f & -::SendRaw )
+f & =::SendRaw _
+f & Backspace::SendRaw +
+f & l::SendRaw K
+f & i::SendRaw U
+f & o::SendRaw I
+f & p::SendRaw O
+f & [::SendRaw P
+f & ]::SendRaw {
+f & \::SendRaw }
+f & u::SendRaw Y
+f & j::SendRaw H
+f & k::SendRaw J
+f & \;::SendRaw L
+f & '::SendRaw :
+f & m::SendRaw N
+f & ,::SendRaw M
+f & .::SendRaw <
+f & /::SendRaw >
+
+l::k
+i::u
+o::i
+p::o
+[::p
+]::[
+\::]
+u::y
+k::j
+\;::l
+'::;
+j::h
+h::Backspace
+m::n
+;]::m
+,::m
+.::,
+/::.
+n::Enter
+y::Tab
+7::6
+8::7
+9::8
+0::9
+-::0
+=::-
+Backspace::=
+
+Tab & x::ExitApp
+Tab & r::reload
+Capslock & Enter::reload
+
+RALT::Backspace
+RALT & p::Send [
+RALT & [::Send ]
+RALT & i::SendRaw {
+RALT & o::SendRaw }
+RALT & j::Send {Left}
+RALT & k::Send {Down}
+RALT & l::Send {Up}
+RALT & \;::Send {Right}
+;RALT & Space::SendRaw {Backspace}
+RALT & ,::Send {PgDn}
+RALT & .::Send {PgUp}

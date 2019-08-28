@@ -1,0 +1,20 @@
+- Vim exercise 1 (move sentence 2 to the last)
+        )   - move to next sentence
+        vas - visual around sentence
+        x   - cut highlighted selection to clipboard
+        $   - goto end of line
+        p   - paste content of clipboard
+
+- Vim exercise 2 (swap 2nd and 3rd)
+        f2  - find the number 2
+        yw  - copy word to clipboard
+        f3  - find "3"
+        ve  - visual end of word
+        p   - paste clipboard over highlighted selection
+        #   - search backword current word that cursor is on 
+        ve  - visual end of word
+        p   - paste clipboard content
+
+Excercise text:
+
+This 1st. This is 2nd. This is 2nd. 

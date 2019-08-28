@@ -1,0 +1,19 @@
+<script>
+        function monkeyTrouble(monkeyA,monkeyB) {
+            if(monkeyA && monkeyB) {
+                return true;
+            }
+            if(monkeyA || monkeyB) {
+                return false;
+            }
+            if(monkeyA == false && monkeyB == false) {
+                return true;
+            }
+        }
+            alert(monkeyTrouble(false,false));
+            alert(monkeyTrouble(true,true));
+
+            alert(monkeyTrouble(true,false));
+            alert(monkeyTrouble(false,true));
+            
+</script>

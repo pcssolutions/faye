@@ -1,0 +1,15 @@
+<script>
+    var numberOfGuess;
+    var numberOfTries = 0;
+    var randomNumber= Math.floor(Math.random() * 101); ;  
+    // returns a random integer from 0 to 100
+do { numberOfTries = numberOfTries + 1; 
+    prompt "Guess a number bewteen 0 and 100"
+    if ( numberOfGuess == randomNumber ) {
+        alert "You win!! It took you " + numberOfTries + "tries!" }
+    if ( numberOfGuess > randomNumber ) { 
+        alert "Guess lower, your too high!" }
+    if ( numberOfGuess < randomNumber ) {
+        alert "Guess higher, your too low!" }
+}
+ /script>

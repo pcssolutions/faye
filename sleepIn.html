@@ -1,0 +1,18 @@
+<script>
+    function canSleepIn(weekend,vacation) {
+        if (weekend || vacation) {
+            return true;
+        } else { 
+            return false;
+        }
+    }
+
+    var onVacation = false;
+    var onWeekend = false;
+
+    if (canSleepIn(onWeekend,onVacation)) {
+        alert("You can sleep in.");
+    } else {
+        alert("Wake up! It's an school day!");
+    }
+</script>

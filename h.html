@@ -1,0 +1,19 @@
+hello
+
+<script>
+    function yearthatissixty (age){
+        age = 60 - age;
+        alert ("youll be 60 in " + age + " years");
+    }
+    do { 
+        age = prompt ("type in your age");
+        x = parseInt(age) ;
+    } while (isNaN( x ))
+    if( x >= 18 ){
+        alert ( " youre an adult" )    ;
+    } else {
+        x = 18 - x;
+        alert (" youll be an adult in " + x + " years");
+    }
+    yearthatissixty(x);
+</script>

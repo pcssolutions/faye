@@ -1,0 +1,28 @@
+VimCommands  <-- gf to open
+
+Enter       RALT-f
+Tab         RALT-t
+Escape      RALT-e
+'           RALT-q
+"           RALT-w
+\           RALT-b
+|           RALT-v
+/           RALT-z
+?           RALT-x
+ALTTAB      RCTRL-Space
+
+; *** MEDIA KEYS ***
+2 - l    Media_Next
+2 - j    Volume_Down
+2 - k    Volume_Up
+2 - p    Media_Play_Pause
+2 - m    Volume_Mute
+
+The Quick Brown fox jumps over the Lazy dog.
+
+"This is a quoted sentence".
+Single quote: '
+Backslash \
+Verticle bar |
+Slash /
+Question mark ?

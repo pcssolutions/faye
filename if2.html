@@ -1,0 +1,20 @@
+  <script>
+var guess, random, count = 0
+random = Math.random();
+random = random * 11;
+random = Math.floor(random);
+do {
+	count = count + 1
+	guess = prompt ("Guess a number") 
+
+	if (guess == random)  {  
+		alert ("Correct!! It took you " + count + "tries!") 
+	} 
+	if (guess > random)  {  
+		alert ("Guess lower") 
+	} 
+	if (guess < random)  {  
+		alert ("Guess higher") 
+	} 
+} while (guess != random) 
+</script>

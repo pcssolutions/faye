@@ -1,0 +1,6 @@
+var numberToGuess;
+var guess
+prompt( " Guess 1 - 100 ")
+if (prompt == numberToGuess  ) {
+alert (" U did it");
+}

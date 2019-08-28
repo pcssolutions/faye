@@ -1,0 +1,24 @@
+<script>
+
+	var guess;
+	var tries = 0;
+	var random = Math.floor(Math.random() * 100) + 1;
+
+	do {
+		guess = prompt('guess 1-100:' + random);
+
+		if ( guess > random + 20 ) {
+			// alert('guess > random + 20'); 
+			alert('Cold, guess lower'); 
+		} else if ( guess > random + 10 ) {
+			// alert( 'guess > random + 10' ) 
+			alert('Warm, guess lower'); 
+		} else if ( guess > random + 5 ) {
+			alert( 'guess > random + 5' ) 
+		} else if ( guess > random  ) {
+			//alert ( 'guess > random' ) 
+			alert('Hot, guess lower'); 
+		}
+	} while( guess != random);
+
+</script>
