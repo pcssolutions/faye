@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	worktree = c:/Shared/OneDrive/faye/Settings
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://JVvix:Faye95843@github.com/JVvix/Settings.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
